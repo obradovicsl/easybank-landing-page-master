@@ -164,10 +164,10 @@
 
 
 /*
-    bellow 400px
+    bellow 415px
 */
 
-@media (max-width: 25rem) {
+@media (max-width: 26rem) {
     .hero-image::before {
         background-image: url(../images/bg-intro-mobile.svg);
         background-size: 100%;
