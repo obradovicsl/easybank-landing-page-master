@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+/*
+///////////////////
+    HEADER
+///////////////////
+*/
+
+.header-container {
+    max-width: 130rem;
+    padding: 2rem 3.2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    gap: 4.4rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #9698a6;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    color: #fff;
+    background: linear-gradient(to right, rgb(49, 211, 92), rgb(43, 183, 218));
+    font-size: 1.4rem;
+    padding: 1.2rem 3.2rem;
+    border-radius: 100px;
+}
+
+/*
+///////////////////
+    SECTION HERO
+///////////////////
+*/
+
+.section-hero {}
+
+.container-hero {
+    display: flex;
+    align-items: center;
+    padding-left: 8rem;
+    height: 65rem;
+    background: #fafafa;
+}
+
+.hero-content {
+    padding: 3.2rem 5.6rem;
+    flex: 2;
+}
+
+.primary-heading {
+    font-size: 5.4rem;
+    font-weight: 300;
+    color: #2d314d;
+    margin-bottom: 1.6rem;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+    color: #9698a6;
+}
+
+.hero-image {
+    position: relative;
+    flex: 3;
+    height: 65rem;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg-intro-desktop.svg');
+    background-size: 149%;
+    background-position: 12% 75%;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-image: url('../images/image-mockups.png');
+    background-repeat: no-repeat;
+    right: 0;
+    background-size: 92%;
+    background-position: 290% 100%;
+    /* display: none; */
+}
+
+/*
+///////////////////
+  SECTION FEATURES
+///////////////////
+*/
+
+.section-features {
+    background: #f3f4f6;
+    padding: 10rem 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 130rem;
+    padding: 0 5rem;
+}
+
+.heading-secondary {
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: #2d314d;
+    margin-bottom: 2.4rem;
+}
+
+.text-secondary {
+    font-size: 1.6rem;
+    max-width: 62rem;
+    line-height: 1.5;
+    color: #9698a6;
+    margin-bottom: 5.6rem;
+}
+
+.grid--cols--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+}
+
+.feature-icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.feature-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #2d314d;
+    margin-bottom: 2.4rem;
+}
+
+.feature-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #9698a6;
+    max-width: 24rem;
+}
+
+/*
+///////////////////
+  SECTION ARTICLES
+///////////////////
+*/
+
+.section-articles {
+    background: #fafafa;
+    padding: 8rem 0;
+}
+
+.article {
+    width: 25rem;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-img {
+    height: 50%;
+}
+
+.article-content {
+    padding: 2.6rem;
+}
+
+.article-author {
+    font-size: 1rem;
+    color: #9698a6;
+    margin-bottom: 1.4rem;
+}
+
+.article-heading {
+    font-size: 1.4rem;
+    color: #2d314d;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+
+.article-text {
+    font-size: 1.2rem;
+    color: #9698a6;
+    line-height: 1.5;
+}
+
+/*
+///////////////////
+    FOOTER
+///////////////////
+*/
+
+footer {
+    padding: 4.4rem 0;
+    background: #2d314d;
+}
+
+.grid--cols--6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4.4rem;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.f-nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.f-nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.f-cta {
+    grid-column: span 3;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.4rem;
+}
+
+.copy {
+    font-size: 1.4rem;
+    color: #9698a6;
+}
