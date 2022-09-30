@@ -10,8 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
 
   <title>Frontend Mentor | Easybank landing page</title>
+
+  <script defer src="script.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!-- <style>
@@ -39,8 +42,26 @@
       </nav>
 
       <a href="#" class="btn btn--cta">Request Invite</a>
+
+      <div class="hamburger-menu">
+        <span class="first-span"></span>
+        <span class="second-span"></span>
+        <span class="third-span"></span>
+      </div>
+
     </div>
   </header>
+
+  <div class="backdrop hidden"></div>
+  <div class="mobile-nav hidden">
+    <ul class="mobile-nav-items">
+      <li><a href="#" class="nav-item">Home</a></li>
+      <li><a href="#" class="nav-item">About</a></li>
+      <li><a href="#" class="nav-item">Contact</a></li>
+      <li><a href="#" class="nav-item">Blog</a></li>
+      <li><a href="#" class="nav-item">Careers</a></li>
+    </ul>
+  </div>
 
   <main>
     <section class="section-hero">
@@ -108,7 +129,7 @@
           Latest Articles
         </h2>
 
-        <div class="grid--cols--4">
+        <div class="grid--cols--4 article-grid">
           <article class="article">
             <img src="images/image-currency.jpg" alt="" class="article-img">
 
@@ -126,7 +147,7 @@
             </div>
           </article>
 
-          <article class="article">
+          <article class="article a1">
             <img src="images/image-restaurant.jpg" alt="" class="article-img">
 
             <div class="article-content">
@@ -161,7 +182,7 @@
             </div>
           </article>
 
-          <article class="article">
+          <article class="article a1">
             <img src="images/image-confetti.jpg" alt="" class="article-img">
             <div class="article-content">
 

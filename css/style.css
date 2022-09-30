@@ -66,6 +66,82 @@ body {
     opacity: 0.6;
 }
 
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    cursor: pointer;
+
+    display: none;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 1.5px;
+    width: 28px;
+    background-color: hsl(233, 26%, 24%);
+    transform-origin: 8px 1px;
+
+    transition: all 0.3s;
+}
+
+
+.active .first-span {
+    transform: rotate(45deg);
+}
+
+.active .second-span {
+    display: none;
+}
+
+.active .third-span {
+    transform: rotate(-45deg);
+}
+
+.backdrop {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 10;
+    left: 0;
+    background-image: linear-gradient(to bottom, hsl(233, 26%, 24%), transparent);
+    z-index: 2;
+
+
+    animation: all 1s;
+}
+
+.mobile-nav {
+    position: fixed;
+    width: 70%;
+    background: #fff;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 3rem;
+
+    transition: all 0.3s;
+}
+
+.mobile-nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.mobile-nav .nav-item:hover,
+.mobile-nav .nav-item:active {
+    border-bottom: none;
+    padding-bottom: none;
+}
+
+.hidden {
+    display: none;
+}
+
 /*
 ///////////////////
     SECTION HERO
@@ -104,12 +180,14 @@ body {
 .hero-image {
     position: relative;
     flex: 3;
+    width: 100%;
     height: 65rem;
 }
 
 .hero-image::before {
     content: "";
     position: absolute;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     background-image: url('../images/bg-intro-desktop.svg');
@@ -200,7 +278,7 @@ body {
 }
 
 .article {
-    width: 25rem;
+    width: 90%;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
@@ -277,8 +355,8 @@ footer {
 
 
 .social-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
     fill: #fff;
 }
 

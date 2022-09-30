@@ -1,0 +1,244 @@
+/* 
+    Bellow 1220px
+*/
+
+@media (max-width: 76.5rem) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .container-hero {
+        padding-left: 5rem;
+    }
+
+    .hero-content {
+        padding: 3.2rem 0 3.2rem 2rem;
+    }
+
+    .hero-image::before {
+        background-size: 166%;
+        background-position: 8% 66%;
+    }
+
+    .hero-image::after {
+        background-size: 90%;
+        background-position: 217% 42%;
+    }
+}
+
+/*
+    Bellow 1000px
+*/
+
+@media (max-width: 62.5rem) {
+    html {
+        font-size: 50%;
+    }
+
+    .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: end;
+        row-gap: 5.6rem;
+        column-gap: 4.4rem;
+    }
+
+    .primary-heading {
+        font-size: 4.4rem;
+    }
+
+    .article {
+        width: 70%;
+    }
+
+    .a1 {
+        justify-self: start;
+    }
+
+    .container-hero {
+        height: 53rem;
+    }
+
+    .hero-image {
+        height: 53rem;
+    }
+
+    .hero-image::before {
+        background-size: 158%;
+        background-position: 0% 62%;
+    }
+
+    .hero-image::after {
+        background-size: 85%;
+        background-position: 163% 100%;
+        height: 115%;
+    }
+}
+
+/*
+    Bellow 750px
+*/
+
+@media (max-width: 47rem) {
+
+    .main-nav,
+    .btn--cta,
+    .btn--cta:link,
+    .btn--cta:visited {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hero-image {
+        height: 65rem;
+    }
+
+    .container-hero {
+        height: 65rem;
+        flex-direction: column;
+        gap: 3.2rem;
+        padding: 0;
+    }
+
+    .hero-image::before {
+        background-size: 118%;
+        background-position: -73% 46%;
+    }
+
+    .hero-image::after {
+        background-size: 53%;
+        background-position: 78% 101%;
+        height: 115%;
+    }
+
+    .hero-content {
+        order: 2;
+        padding: 4.4rem 5.6rem;
+    }
+
+    .hero-text {
+        max-width: none;
+    }
+
+    .grid--cols--4 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    .section-features {
+        padding: 8rem 0;
+    }
+
+}
+
+/*
+    bellow 570px
+*/
+
+@media (max-width: 36rem) {
+    .grid--cols--6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .f-cta {
+        justify-self: center;
+        align-items: start;
+    }
+
+    .article {
+        width: 100%;
+    }
+
+    .article-content {
+        padding: 1.2rem;
+    }
+}
+
+
+
+/*
+    bellow 375px
+*/
+
+@media (max-width: 23.45rem) {
+    .hero-image::before {
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-size: 100%;
+        background-position: center center;
+    }
+
+    .hero-image::after {
+        background-size: 86%;
+        background-position: center bottom;
+        height: 115%;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .main-container {
+        text-align: center;
+        padding: 0 2.4rem;
+    }
+
+    .grid--cols--4 {
+        grid-template-columns: 1fr;
+        gap: 4.4rem;
+        justify-items: center;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    .feature-text {
+        max-width: none;
+        font-size: 1.6rem;
+    }
+
+    .article,
+    .a1 {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .article-content {
+        text-align: left;
+        padding: 3.2rem;
+    }
+
+    .article-author {
+        font-size: 1.2rem;
+    }
+
+    .article-heading:link,
+    .article-heading:visited {
+        font-size: 1.6rem;
+    }
+
+    .article-text {
+        font-size: 1.4rem;
+    }
+
+    .grid--cols--6 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .f-cta {
+        grid-column: 1;
+        justify-self: center;
+        align-items: center;
+    }
+
+
+}
