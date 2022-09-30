@@ -13,14 +13,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot/Easybank%20landing%20page.png)
-![](screenshot/Frontend%20Mentor%20-%20Easybank%20mobile.png.png)
-
+![](screenshot/easybank.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/obradovicsl/easybank-landing-page-master)
-- Live Site URL: [Add live site URL here](https://easybank-obradovicsl.netlify.app/)
+- Solution URL: [GitHub](https://github.com/obradovicsl/easybank-landing-page-master)
+- Live Site URL: [easybank-obradovicsl](https://easybank-obradovicsl.netlify.app/)
 
 ## My process
 
