@@ -73,9 +73,10 @@ body {
 */
 
 .container-hero {
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding-left: 8rem;
+    padding-left: 10rem;
     height: 65rem;
     background: #fafafa;
 }
@@ -96,6 +97,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     margin-bottom: 2.4rem;
+    max-width: 41rem;
     color: #9698a6;
 }
 
